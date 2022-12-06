@@ -32,7 +32,7 @@ def pouce_cm():
 
 def cm_pouce():
     _valeur = demander_chiffre("Donner la valeur en cm ; 'q' pour quitter ou 'r' pour revenir à l'accueil")
-    print(_valeur, "cm =", _valeur / 0.394, "pouces")
+    print(_valeur, "cm =", _valeur * 0.394, "pouces")
     while _valeur:
         cm_pouce()
 
