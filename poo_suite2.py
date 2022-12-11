@@ -40,8 +40,7 @@ class Personne(Espece):
 
 class Etudiant(Personne):
     def __init__(self, nom: str = "", age: int = 0, etude: tuple = ()):
-        self.nom = nom
-        self.age = int(age)
+        super().__init__(nom, age)
         self.etude = etude
 
     def SePresenter(self):  # surchage de la méthode
@@ -51,4 +50,4 @@ class Etudiant(Personne):
             print(etude)
 
 
-Etudiant("Brou", 21, ("Math", "Chimie")).SePresenter()
+Etudiant("Fabien", 21, ("Math", "Chimie")).SePresenter()
