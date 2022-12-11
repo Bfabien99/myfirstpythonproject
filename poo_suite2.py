@@ -50,4 +50,4 @@ class Etudiant(Personne):
             print(etude)
 
 
-Etudiant("Fabien", 21, ("Math", "Chimie")).SePresenter()
+Etudiant("Fabien", 21, ("Math", "Chimie")).AfficherEspece()
