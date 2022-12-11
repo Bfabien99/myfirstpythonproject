@@ -44,7 +44,8 @@ class Etudiant(Personne):
         self.age = int(age)
         self.etude = etude
 
-    def SePresenter(self): # surchage de la méthode
+    def SePresenter(self):  # surchage de la méthode
+        super().SePresenter()  # on fait appel à la methode du parent
         print(" -->> Je suis étudiant en <<-- ")
         for etude in self.etude:
             print(etude)
