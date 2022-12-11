@@ -6,11 +6,18 @@ class Personne:
         print("Bonjour, je suis une personne et je m'apelle " + self.nom)
 
 
-noms = [input("nom de la personne 1 : "), input("nom de la personne 2 : "), input("nom de la personne 3 : ")]
+noms = []
+i = 1
+while True:
+    nom = input("Entrer le nom de la personne {} : ".format(i))
+    if nom == "":
+        break
+    i += 1
+    noms.append(nom)
 
 liste = []
 for nom in noms:
     liste.append(Personne(nom))
 
 for personne in liste:
-    print(personne.SePresenter())
+    personne.SePresenter()
