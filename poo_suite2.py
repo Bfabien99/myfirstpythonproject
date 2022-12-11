@@ -1,8 +1,9 @@
 class Personne:
+    espece = "Humain" # variable de classe
+
     def __init__(self, nom: str = "", age: int = 0):
         self.nom = nom
         self.age = int(age)
-        self.espece = "Humain"
         if nom == "":
             self.DemanderNom()
 
@@ -25,8 +26,7 @@ class Personne:
         return self.age >= 18
 
     def AfficherEspece(self):
-        print("Espèce : " + self.espece)
+        print("Espèce : " + Personne.espece)
 
 
-Personne("nom", 16).AfficherEspece()
 Personne("Aline", 19).AfficherEspece()
