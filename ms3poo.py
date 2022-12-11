@@ -1,9 +1,8 @@
 class Chat:
-    def __init__(self):
-        self.nom = "inconnu"
-
-    def SePresenter(self, nom_falcutatif=""):
+    def __init__(self, nom_falcutatif: str = "inconnu"):
         self.nom = nom_falcutatif
+
+    def SePresenter(self):
         print("Bonjour, je suis un chat et je m'apelle " + self.nom)
 
 
