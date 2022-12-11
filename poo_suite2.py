@@ -1,5 +1,5 @@
 class Personne:
-    espece = "Humain" # variable de classe
+    espece = "Humain"  # variable de classe, une seule pour toutes les instances
 
     def __init__(self, nom: str = "", age: int = 0):
         self.nom = nom
@@ -25,6 +25,11 @@ class Personne:
     def EstMajeur(self):
         return self.age >= 18
 
+    """
+    Sans self, la méthode de vient static
+    pour l'appeler on fait:
+    nom_de_la_classe.nom_methode()
+    """
     def AfficherEspece(self):
         print("Espèce : " + Personne.espece)
 
