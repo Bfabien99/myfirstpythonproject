@@ -3,6 +3,7 @@ from art import *
 # Ma version ...
 
 
+# demander à l'utilisateur de faire un choix
 def demander_chiffre(question):
 
     print(question)
@@ -23,6 +24,7 @@ def demander_chiffre(question):
     return demander_chiffre(question)
 
 
+# convertisseur pouce en cm
 def pouce_cm():
     _valeur = demander_chiffre("Donner la valeur en pouces ; 'q' pour quitter ou 'r' pour revenir à l'accueil")
     print(_valeur, "pouces =", _valeur * 2.54, "cm")
@@ -30,6 +32,7 @@ def pouce_cm():
         pouce_cm()
 
 
+# convertisseur cm en pouce
 def cm_pouce():
     _valeur = demander_chiffre("Donner la valeur en cm ; 'q' pour quitter ou 'r' pour revenir à l'accueil")
     print(_valeur, "cm =", _valeur * 0.394, "pouces")
@@ -37,6 +40,7 @@ def cm_pouce():
         cm_pouce()
 
 
+# demander à l'utilisateur de faire un choix de convertisseur
 def demander_convertisseur():
 
     reponse_str = input("Votre choix (1 ou 2): ")
@@ -51,6 +55,7 @@ def demander_convertisseur():
     return demander_convertisseur()
 
 
+# le programme
 def converter():
     print("Ce programme vous permet d'éffectuer des convers d'unités")
     print('''
